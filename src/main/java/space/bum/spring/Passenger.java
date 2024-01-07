@@ -10,11 +10,18 @@ import lombok.ToString;
 public class Passenger {
   private String name;
   private Country country;
+  private boolean registered;
+
   public Passenger(String name) {
     super();
     this.name = name;
   }
+
   public void setCountry(Country country) {
     this.country = country;
+  }
+
+  public void setRegistered(boolean registered) {
+    this.registered = registered;
   }
 }
